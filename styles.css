@@ -1,6 +1,7 @@
 /* Navbar */
 .navbar {
     transition: background-color 0.3s ease-in-out;
+    background-color: rgb(128, 20, 230);
 }
 
 .navbar-brand {
@@ -53,7 +54,7 @@
 
 /* Footer */
 footer {
-    background-color: #343a40;
+    background-color: #0e4477;
 }
 
 footer p {
