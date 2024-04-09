@@ -1,7 +1,6 @@
 /* Navbar */
 .navbar {
     transition: background-color 0.3s ease-in-out;
-    background-color: rgb(128, 20, 230);
 }
 
 .navbar-brand {
@@ -16,12 +15,12 @@
 
 /* Hero Section */
 #hero {
-    background-color: rgb(75, 24, 122);
+    background-color: blueviolet;
 }
 
 /* About Section */
 #about {
-    background-color: #104070;
+    background-color: #343a40;
 }
 
 /* Projects Section */
@@ -54,10 +53,19 @@
 
 /* Footer */
 footer {
-    background-color: #0e4477;
+    background-color: #343a40;
 }
 
 footer p {
     font-size: 0.9rem;
     margin-bottom: 0;
+}
+
+/* Scroll to Top Button */
+#btnScrollToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    z-index: 99;
 }
