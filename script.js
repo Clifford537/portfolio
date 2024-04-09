@@ -2,10 +2,14 @@
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+  var scrollToTopBtn = document.getElementById("btnScrollToTop");
+  
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("btnScrollToTop").style.display = "block";
+    scrollToTopBtn.style.display = "block";
+    scrollToTopBtn.style.bottom = "30px";
+    scrollToTopBtn.style.right = "30px";
   } else {
-    document.getElementById("btnScrollToTop").style.display = "none";
+    scrollToTopBtn.style.display = "none";
   }
 }
 
