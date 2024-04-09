@@ -1,26 +1,30 @@
 /* Navbar */
 .navbar {
     transition: background-color 0.3s ease-in-out;
+    background-color: #e4890a;
+   
 }
 
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
+    color: rgb(226, 222, 233);
 }
 
 .navbar-nav .nav-link {
     font-weight: bold;
     font-size: 1.1rem;
+    color: rgb(226, 222, 233);
 }
 
 /* Hero Section */
 #hero {
-    background-color: blueviolet;
+    background-color: rgb(110, 79, 43);
 }
 
 /* About Section */
 #about {
-    background-color: #343a40;
+    background: linear-gradient(135deg, #10a0a5, #e4890a); 
 }
 
 /* Projects Section */
@@ -48,7 +52,8 @@
 
 /* Contact Section */
 #contact {
-    background-color: #ffffff;
+    background-color: #745a42;
+    color: aliceblue;
 }
 
 /* Footer */
@@ -150,27 +155,63 @@ footer p {
     position: relative;
 }
 
-/* Fluid box container */
-.fluid-box {
+/* Cube container */
+.cube {
     position: absolute;
-    bottom: 10px; /* Adjust position as needed */
-    right: 10px; /* Adjust position as needed */
-    width: 150px; /* Adjust size as needed */
-    height: 150px; /* Adjust size as needed */
-    background: linear-gradient(135deg, #75c9f3, #5a85f2); /* Gradient color */
-    border-radius: 15px; /* Soften the edges */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    bottom: 50px; /* Adjust position as needed */
+    right: 50px; /* Adjust position as needed */
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
     transform-style: preserve-3d; /* Enable 3D transformations */
-    transform: rotateX(45deg) rotateY(45deg); /* Apply 3D rotation */
-    animation: fluidMotion 3s infinite ease-in-out; /* Add fluid motion animation */
+    animation: cubeMove 5s infinite alternate ease-in-out; /* Add cube movement animation */
 }
 
-/* Fluid motion animation */
-@keyframes fluidMotion {
+/* Cube sides */
+.side {
+    position: absolute;
+    width: 100px; 
+    height: 100px;
+    background: linear-gradient(135deg, #2a0341, #e4890a); 
+    opacity: 0.9; 
+    border-radius: 10px;
+}
+
+/* Front side */
+.front {
+    transform: translateZ(50px);
+}
+
+/* Back side */
+.back {
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+/* Top side */
+.top {
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+/* Bottom side */
+.bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+/* Left side */
+.left {
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+/* Right side */
+.right {
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+/* Cube movement animation */
+@keyframes cubeMove {
     0%, 100% {
-        transform: rotateX(45deg) rotateY(45deg) translateZ(-5px); /* Adjust perspective */
+        transform: rotateX(45deg) rotateY(45deg) translateY(0); /* Adjust cube position */
     }
     50% {
-        transform: rotateX(45deg) rotateY(45deg) translateZ(5px); /* Adjust perspective */
+        transform: rotateX(45deg) rotateY(45deg) translateY(20px); /* Adjust cube position */
     }
 }
