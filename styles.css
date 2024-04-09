@@ -68,4 +68,109 @@ footer p {
     right: 30px;
     display: none;
     z-index: 99;
+    animation: pulse 1s infinite alternate; /* Add pulse animation */
+}
+
+/* Scrolling text */
+.scrolling-text {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.scrolling-text marquee {
+    font-size: 1.2rem;
+    color: #fff;
+    animation: zoomInOut 5s linear infinite alternate; /* Add zoom in and out animation */
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Animated text */
+.animated-text {
+    position: relative;
+    display: inline-block;
+    animation: scaleIn 1s forwards, fadeIn 1s forwards;
+    opacity: 0;
+    transform-origin: center;
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomInOut {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Additional animation after the welcome effect */
+.animated-text-welcome-after {
+    animation: bounce 0.5s ease forwards;
+    transform-origin: center;
+    display: inline-block;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* About Section */
+#about {
+    position: relative;
+}
+
+/* Fluid box container */
+.fluid-box {
+    position: absolute;
+    bottom: 10px; /* Adjust position as needed */
+    right: 10px; /* Adjust position as needed */
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    background: linear-gradient(135deg, #75c9f3, #5a85f2); /* Gradient color */
+    border-radius: 15px; /* Soften the edges */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    transform-style: preserve-3d; /* Enable 3D transformations */
+    transform: rotateX(45deg) rotateY(45deg); /* Apply 3D rotation */
+    animation: fluidMotion 3s infinite ease-in-out; /* Add fluid motion animation */
+}
+
+/* Fluid motion animation */
+@keyframes fluidMotion {
+    0%, 100% {
+        transform: rotateX(45deg) rotateY(45deg) translateZ(-5px); /* Adjust perspective */
+    }
+    50% {
+        transform: rotateX(45deg) rotateY(45deg) translateZ(5px); /* Adjust perspective */
+    }
 }
