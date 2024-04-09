@@ -1,0 +1,62 @@
+/* Navbar */
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+#hero {
+    background-color: rgb(75, 24, 122);
+}
+
+/* About Section */
+#about {
+    background-color: #104070;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #f8f9fa;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
