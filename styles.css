@@ -73,7 +73,7 @@ footer p {
     right: 30px;
     display: none;
     z-index: 99;
-    animation: pulse 1s infinite alternate; /* Add pulse animation */
+    animation: pulse 1s infinite alternate; 
 }
 
 /* Scrolling text */
@@ -133,7 +133,7 @@ footer p {
     }
 }
 
-/* Additional animation after the welcome effect */
+
 .animated-text-welcome-after {
     animation: bounce 0.5s ease forwards;
     transform-origin: center;
@@ -155,18 +155,17 @@ footer p {
     position: relative;
 }
 
-/* Cube container */
 .cube {
     position: absolute;
-    bottom: 50px; /* Adjust position as needed */
-    right: 50px; /* Adjust position as needed */
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
-    transform-style: preserve-3d; /* Enable 3D transformations */
-    animation: cubeMove 5s infinite alternate ease-in-out; /* Add cube movement animation */
+    bottom: 50px; 
+    right: 50px; 
+    width: 100px; 
+    height: 100px; 
+    transform-style: preserve-3d; 
+    animation: cubeMove 5s infinite alternate ease-in-out; 
 }
 
-/* Cube sides */
+
 .side {
     position: absolute;
     width: 100px; 
@@ -209,9 +208,9 @@ footer p {
 /* Cube movement animation */
 @keyframes cubeMove {
     0%, 100% {
-        transform: rotateX(45deg) rotateY(45deg) translateY(0); /* Adjust cube position */
+        transform: rotateX(45deg) rotateY(45deg) translateY(0); 
     }
     50% {
-        transform: rotateX(45deg) rotateY(45deg) translateY(20px); /* Adjust cube position */
+        transform: rotateX(45deg) rotateY(45deg) translateY(20px); 
     }
 }
