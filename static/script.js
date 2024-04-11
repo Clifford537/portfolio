@@ -61,3 +61,27 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }, 1000); // Adjust delay as needed
 });
+
+const heading = document.getElementById('typing-heading').innerText;
+document.getElementById('typing-heading').innerText = '';
+let j = 0;
+function typeWriterHeading() {
+  if (j < heading.length) {
+    document.getElementById('typing-heading').innerHTML += heading.charAt(j);
+    j++;
+    setTimeout(typeWriterHeading, 50);
+  }
+}
+typeWriterHeading();
+
+const text = document.getElementById('typing-text').innerText;
+document.getElementById('typing-text').innerText = '';
+let i = 0;
+function typeWriterText() {
+  if (i < text.length) {
+    document.getElementById('typing-text').innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriterText, 50);
+  }
+}
+typeWriterText();
