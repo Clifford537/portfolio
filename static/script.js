@@ -41,7 +41,7 @@ function scrollFunction() {
   }
 }
 
-document.getElementById("btnScrollToTop").addEventListener("click", function() {
+document.getElementById("btnScrollToTop1").addEventListener("click", function() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelectorAll(".animated-text-welcome-after").forEach(function(elem) {
             elem.classList.add("animate");
         });
-    }, 1000); // Adjust delay as needed
+    }, 1000); 
 });
 
 const heading = document.getElementById('typing-heading').innerText;
@@ -85,3 +85,16 @@ function typeWriterText() {
   }
 }
 typeWriterText();
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Function to toggle the theme
+  function toggleTheme() {
+    document.body.classList.toggle('dark-theme');
+  }
+  
+  // Add click event listener to the theme toggle button
+  const themeToggleBtn = document.getElementById("themeToggleBtn");
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener("click", toggleTheme);
+  }
+});
