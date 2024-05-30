@@ -86,15 +86,3 @@ function typeWriterText() {
 }
 typeWriterText();
 
-document.addEventListener("DOMContentLoaded", function() {
-  // Function to toggle the theme
-  function toggleTheme() {
-    document.body.classList.toggle('dark-theme');
-  }
-  
-  // Add click event listener to the theme toggle button
-  const themeToggleBtn = document.getElementById("themeToggleBtn");
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener("click", toggleTheme);
-  }
-});
