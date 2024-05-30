@@ -8,13 +8,15 @@
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
-    color: rgb(226, 222, 233);
+    color: rgb(27, 184, 53);
 }
 
 .navbar-nav .nav-link {
     font-weight: bold;
     font-size: 1.1rem;
-    color: rgb(226, 222, 233);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 /* Hero Section */
