@@ -58,6 +58,10 @@
       Vue.js (with Nuxt.js), and Angular, as well as backend technologies
       including Django, PHP, Flask, 
       and Node.js, to build responsive, user-friendly, and scalable websites and applications.
+      <br>
+      I have successfully completed <b id="clientProjects" style="color:rgb(216, 230, 23); font-size: 20px;">0</b> 
+      Website Projects for different Clients, and I have done <b id="personalProjects" style="color:rgb(216, 230, 23); font-size: 20px;">10</b> 
+      Personal Web Projects.
     </p>
   </div>
 </section>
@@ -189,7 +193,38 @@
 
 <!-- Scroll to Top Button -->
 <button class="btn btn-primary btn-floating" id="btnScrollToTop"><i class="fas fa-arrow-up"></i></button>
+<script>
+    // Initial counts
+    let clientProjectsCount = 0;
+  let personalProjectsCount = 10;
 
+  // Function to increment counters
+  function incrementCounters() {
+    // Target values
+    const targetClientProjects = 17; // Change this to the desired target
+    const targetPersonalProjects = 40; // Change this to the desired target
+
+    // Increment client projects
+    if (clientProjectsCount < targetClientProjects) {
+      clientProjectsCount++;
+      document.getElementById("clientProjects").innerText = clientProjectsCount;
+    }
+
+    // Increment personal projects
+    if (personalProjectsCount < targetPersonalProjects) {
+      personalProjectsCount++;
+      document.getElementById("personalProjects").innerText = personalProjectsCount;
+    }
+
+    // Stop the interval if the targets are reached
+    if (clientProjectsCount >= targetClientProjects && personalProjectsCount >= targetPersonalProjects) {
+      clearInterval(counterInterval);
+    }
+  }
+
+  // Start the counter with a set interval
+  const counterInterval = setInterval(incrementCounters, 100);
+</script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
