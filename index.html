@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <meta name="description" content="Portfolio of Clifford Mukosh, a Full-Stack Developer specializing in Django, React, and real-time web applications.">
+    <meta name="keywords" content="Django, React, Redux, Celery, WebSocket, OAuth, Full Stack Developer, Clifford Mukosh">
+    <meta name="author" content="Clifford Mukosh">
+    <title>Clifford Mukosh - Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./static/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -11,15 +14,15 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg  navbar-dark">
-  <a class="navbar-brand" href="#"><i class="fas fa-laptop-code"></i>clifford mukosh</a>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="#hero"><i class="fas fa-laptop-code"></i> Clifford Mukosh</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item ">
-        <a class="nav-link text-light" href="#about"><i class="fas fa-user"></i> About clifford</a>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#about"><i class="fas fa-user"></i> About Clifford</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-light" href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
@@ -34,39 +37,30 @@
 <!-- Hero Section -->
 <section id="hero" class="text-white text-center py-5 bg-blueviolet">
     <div class="container">
-      <h1 class="display-3 mb-4 animated-text">Welcome Clifford's Portfolio</h1> <br>
-      <p class="lead animated-text">Explore my projects and get in touch!</p>
+      <h1 class="display-3 mb-4 animated-text">Welcome to Clifford Mukosh's Portfolio</h1>
+      <p class="lead animated-text">Explore my Django and React projects!</p>
       <div class="scrolling-text">
-        <marquee behavior="scroll" direction="left" scrollamount="6">
-          Experienced in Python programming framework Django and Flask, PHP, and javascript framework React js and vue js..
-        </marquee>
+        <p>Experienced in Django, Django REST Framework, Celery, WebSocket, OAuth, React, Redux, Vite, and payment gateways.</p>
       </div>
-  </section>
+    </div>
+</section>
 
 <!-- About Section -->
 <section id="about" class="py-5 text-center text-white position-relative">
   <div class="container">
     <h2 class="mb-4" id="typing-heading">About Clifford</h2>
-    <p class="lead" id="typing-text">I'm a passionate Full-Stack Developer with a strong drive for creating innovative, user-focused web solutions.</p>
+    <p class="lead" id="typing-text">Full-Stack Developer specializing in scalable backend solutions and real-time web applications.</p>
     <p style="text-align: justify; font-size: 17px; font-weight: bold;">
-      As a Full-Stack Developer, I specialize in building complete web applications from frontend to backend, using modern and efficient technologies.  
-      
-      <b>Front-End Frameworks and Libraries:</b> React (with Next.js), Vue.js (with Nuxt.js), and Angular. <br>
-      <b>State Management Tools:</b> Redux, Zustand, and Context API for scalable and maintainable architectures. <br>
-      <b>CSS Frameworks:</b> Tailwind CSS, Bootstrap, and Material-UI for responsive and visually engaging designs. <br>
-      <b>Build Tools:</b> Webpack, Vite, and Parcel for fast, optimized development workflows. <br>
-      <b>Backend Technologies:</b> Node.js (with Express), Django, Flask, and Laravel for building robust APIs and server-side applications. <br>
-      <b>APIs:</b> RESTful APIs and GraphQL for seamless, scalable integration between services.
-
-      I have successfully completed <b id="clientProjects" style="color:rgb(216, 230, 23); font-size: 20px;">0</b> client projects and built <b id="personalProjects" style="color:rgb(216, 230, 23); font-size: 20px;">10</b> personal projects, showcasing my ability to deliver responsive, scalable, and user-centric web applications.  
-      I am passionate about leveraging cutting-edge technologies and best practices to craft solutions that exceed user expectations.
+      I am a passionate Full-Stack Developer with expertise in building robust web applications using <b>Django</b> and <b>Django REST Framework</b>.
+      I excel in implementing asynchronous task processing with <b>Celery</b>, real-time communication with <b>Django Channels</b> and <b>WebSocket Consumers</b>,
+      and secure authentication via <b>Google OAuth</b>. My experience includes integrating payment gateways like <b>M-Pesa</b> and <b>Stripe</b> for seamless transactions.
+      On the frontend, I leverage <b>React</b> with <b>Redux</b> and <b>Vite</b> to create responsive, user-centric interfaces.
+      I have delivered <b id="clientProjects" style="color:rgb(216, 230, 23); font-size: 20px;">3</b> client projects and built
+      <b id="personalProjects" style="color:rgb(216, 230, 23); font-size: 20px;">5</b> personal projects, showcasing my ability to craft innovative solutions.
     </p>
   </div>
 </section>
 
-    
-<!-- About Section -->
-    
 <!-- Projects Section -->
 <section id="projects" class="py-5">
   <div class="container">
@@ -74,93 +68,46 @@
     <div class="row">
       <div class="col-lg-4 mb-4">
         <div class="card">
-          <img src="./static/project1.png" class="card-img-top" alt="Project 1">
+          <img src="./static/ecommerce.png" class="card-img-top" alt="E-commerce platform screenshot">
           <div class="card-body">
-            <h5 class="card-title">e-commerce application UI</h5>
+            <h5 class="card-title">E-Commerce Platform</h5>
             <p class="card-text">
-              <P style="color: rgb(23, 119, 230); font-size: 18PX;">Technologies <B> MySQL Database ,PHP Backend, Vue JavaScript, jsx </B> :</P> 
-              I worked on an ecoomerce web application UI created the login and 
-              the landing  page using Vue js.
-            <p>
-              I used PHP for creating the backend and use MySQL Database 
-            </p></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 mb-4">
-        <div class="card">
-          <img src="../portfolio/static/start_page.png" class="card-img-top" alt="Project 2">
-          <div class="card-body">
-            <h5 class="card-title">Telegram course update bot</h5>
-            <p class="card-text">
-              <P style="color: rgb(23, 119, 230); font-size: 18PX;">Technologies <b>MySQL, APIs , Flask , HTML5 , CSS , JavaScript</b> :</P> 
-              I used the Telegram API to create a chatbot that allowed lecturers 
-              to communicate with students. 
-              It was a solution for broadcasting messages and it formed 
-              an appealing interface which attracts users.
+              <p style="color: rgb(23, 119, 230); font-size: 18px;">Technologies: <b>Django, Django REST Framework, Celery, MySQL, React, Redux, M-Pesa, Stripe</b></p>
+              Developed a scalable e-commerce platform with secure payment processing using M-Pesa and Stripe, handling 500+ daily transactions.
+              Used Django and Celery for asynchronous order processing, reducing checkout time by 25%. Built a responsive frontend with React and Redux for seamless user experience.
+              <a href="https://github.com/Clifford537/Ecommerce-Platform" target="_blank">View on GitHub</a>
             </p>
           </div>
         </div>
       </div>
-      <!-- next project -->
       <div class="col-lg-4 mb-4">
         <div class="card">
-          <img src="./static/WHTA.png" class="card-img-top" alt="Project 2">
+          <img src="./static/jobplatform.png" class="card-img-top" alt="Job connection platform screenshot">
           <div class="card-body">
-            <h5 class="card-title">WHTA website</h5>
+            <h5 class="card-title">Job Connection Platform</h5>
             <p class="card-text">
-              <P style="color: rgb(23, 119, 230); font-size: 18PX;">Technologies <b>React javascript, Jsx</b> :</P> I worked on the UI design for the home section of the WHTA website I used React JavaScript. 
-              <a href="https://www.whtanetworks.com">Have a look </a>
+              <p style="color: rgb(23, 119, 230); font-size: 18px;">Technologies: <b>Django, Django REST Framework, Django Channels, WebSocket, React, Vite, Google OAuth</b></p>
+              Built a microservices-based platform for job seekers and employers with real-time chat using Django Channels and WebSocket Consumers.
+              Integrated Google OAuth for secure authentication and developed a Vite-powered React frontend, improving user engagement by 30%.
+              <a href="https://github.com/Clifford537/Job-Connection-Platform" target="_blank">View on GitHub</a>
             </p>
           </div>
         </div>
       </div>
-
       <div class="col-lg-4 mb-4">
         <div class="card">
-          <img src="./static/Jumbofilmz.png" class="card-img-top" alt="Project 2">
+          <img src="./static/schoolcomm.png" class="card-img-top" alt="School communication system screenshot">
           <div class="card-body">
-            <h5 class="card-title"></h5>
+            <h5 class="card-title">School Communication System</h5>
             <p class="card-text">
-              <P style="color: rgb(23, 119, 230); font-size: 18PX;">Technologies  <b>TypeScript</b> <b>javascript</b> <b>Jquery</b> :</P> 
-              The Jumbo Filmz website is built using TypeScript,
-               a statically typed superset of JavaScript. The application functions as a
-                platform for unlimited movie and series streaming,
-               offering users access to the latest, best, and trending content across various genre
-              <a href="https://jumbo-filmz.vercel.app/">Have a look </a>
+              <p style="color: rgb(23, 119, 230); font-size: 18px;">Technologies: <b>Flask, Celery, MySQL, React, Vite, Telegram API</b></p>
+              Developed a real-time messaging system for lecturers and students using Flask and Telegram API integration.
+              Utilized Celery for asynchronous message processing, supporting 1,000+ users, and built a responsive React frontend with Vite.
+              <a href="https://github.com/Clifford537/School-Communication-System" target="_blank">View on GitHub</a>
             </p>
           </div>
         </div>
       </div>
-      
-      <div class="col-lg-4 mb-4">
-        <div class="card">
-          <img src="./static/Pharmacy-Inventory-System.PNG" class="card-img-top" alt="Project 4">
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text">
-             <P style="color: rgb(23, 119, 230); font-size: 18PX;">Technologies  <b>PHP</b> <b>MYSQL</b>  <b>javascript</b> <b>Jquery</b> :</P> 
-              The Medical Records Management System is a
-              web-based application designed to assist medical 
-              facilities in managing patient records and keeping track of 
-              their medicine inventor.This system provides a user-friendly
-              interface to efficiently handle essential tasks for medical
-              staff, administrators, and pharmacists.
-              Features
-              Patient Records Management
-              Create, update, and delete patient records.
-              Store comprehensive patient information, including personal details, 
-              medical history, and appointment schedules.
-              Easily search and retrieve patient records.
-              Assign unique identifiers to patients for easy tracking.
-              Medicine Inventory
-              <a href="https://github.com/Clifford537/Pharmacy-Inventory-System">Have a look </a>
-            </p>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -169,62 +116,58 @@
 <section id="contact" class="py-5 text-center">
   <div class="container">
     <h2 class="mb-4">Contact Me</h2>
-    <p class="lead">Feel free to reach out to me for any inquiries or collaborations!</p>
+    <p class="lead">Feel free to reach out for inquiries or collaborations!</p>
     <p>
       <a href="mailto:cliffordmukosh@gmail.com" style="color: rgb(159, 201, 43); font-size: 23px;">
-          <i class="fas fa-envelope email-icon"></i>cliffordmukosh@gmail.com
+        <i class="fas fa-envelope email-icon"></i> cliffordmukosh@gmail.com
       </a>
-  </p>
-  <p>
+    </p>
+    <p>
       <a href="https://www.linkedin.com/in/clifford-mukosh-5234a7221" class="btn btn-success">
-          <i class="fab fa-linkedin"></i> LinkedIn
+        <i class="fab fa-linkedin"></i> LinkedIn
       </a>
-  </p>
-  <p>
+    </p>
+    <p>
       <a href="https://wa.me/254111920010" class="btn btn-info">
-          <i class="fab fa-whatsapp"></i> WhatsApp
+        <i class="fab fa-whatsapp"></i> WhatsApp
       </a>
-  </p>
-    
+    </p>
   </div>
 </section>
+
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-3">
-  <p>&copy; 2024 @clifford_Mukosh</p>
+  <p>© 2025 Clifford Mukosh</p>
 </footer>
 
 <!-- Scroll to Top Button -->
 <button class="btn btn-primary btn-floating" id="btnScrollToTop"><i class="fas fa-arrow-up"></i></button>
+
+<!-- Scripts -->
 <script>
-    // Initial counts
-    let clientProjectsCount = 0;
-  let personalProjectsCount = 10;
+  // Counter for projects
+  let clientProjectsCount = 0;
+  let personalProjectsCount = 0;
 
-  // Function to increment counters
   function incrementCounters() {
-    // Target values
-    const targetClientProjects = 17; // Change this to the desired target
-    const targetPersonalProjects = 40; // Change this to the desired target
+    const targetClientProjects = 3; // WHTA, Learnsoft, CPIMS
+    const targetPersonalProjects = 5; // E-Commerce, Job Connection, School Comm, Medical, Library
 
-    // Increment client projects
     if (clientProjectsCount < targetClientProjects) {
       clientProjectsCount++;
       document.getElementById("clientProjects").innerText = clientProjectsCount;
     }
 
-    // Increment personal projects
     if (personalProjectsCount < targetPersonalProjects) {
       personalProjectsCount++;
       document.getElementById("personalProjects").innerText = personalProjectsCount;
     }
 
-    // Stop the interval if the targets are reached
     if (clientProjectsCount >= targetClientProjects && personalProjectsCount >= targetPersonalProjects) {
       clearInterval(counterInterval);
     }
   }
 
-  // Start the counter with a set interval
   const counterInterval = setInterval(incrementCounters, 100);
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
